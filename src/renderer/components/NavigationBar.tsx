@@ -1,15 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation  } from 'react-router-dom';
 
 const NavigationBar = () => {
+  const location = useLocation();
+
+  const isActive = (path:string) => {
+    return location.pathname === path;
+  };
+
   return (
     <nav>
       <ul>
-        <li>
-          <Link to="/">Home</Link>
+        <li  >
+          <Link to="/" className={isActive('/') ? 'active' : ''}>Home</Link>
         </li>
         <li>
-          <Link to="/weather">Weather</Link>
+          <Link to="/weather" className={isActive('/weather') ? 'active' : ''}>Weather</Link>
         </li>
       </ul>
     </nav>
