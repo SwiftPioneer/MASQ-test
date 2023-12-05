@@ -4,6 +4,7 @@ import './App.css';
 import './style.scss';
 import WeatherComponent from './components/WeatherComponent';
 import NavigationBar from './components/NavigationBar';
+import Home from './components/Home';
 
 function Hello() {
   return (
@@ -47,7 +48,7 @@ export default function App() {
     <Router>
       <NavigationBar />
       <Routes>
-        <Route path="/" element={<Hello />} />
+        <Route path="/" element={<Home />} />
         <Route path="/weather" element={<WeatherComponent />} />
       </Routes>
     </Router>

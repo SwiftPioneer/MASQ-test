@@ -1,7 +1,10 @@
 import React from 'react';
+import ColorPicker from './ColorPicker';
 
 const Home: React.FC = () => {
-  return <div>Welcome to the Home Page!</div>
+  return (
+  <ColorPicker />
+  )
 };
 
 export default Home;
