@@ -11,3 +11,8 @@ button {
     background-color: darken($primary-button-color, 10%);
   }
 }
+.color-picker {
+  box-shadow: rgb(0 0 0 / 15%) 0px 0px 0px 1px, rgb(0 0 0 / 15%) 0px 8px 16px;
+  margin: auto;
+  margin-bottom: 3em;
+}

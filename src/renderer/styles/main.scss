@@ -1,4 +1,4 @@
-@import 'components/_buttons';
+@import 'components/_forms';
 @import 'components/_variables';
 
 $bgcolor: #000e17;
@@ -19,7 +19,9 @@ h1 {
 p {
   color: $secondary-text-color;
 }
-
+ul {
+  padding: 0;
+}
 nav {
   padding-top: 2em;
 

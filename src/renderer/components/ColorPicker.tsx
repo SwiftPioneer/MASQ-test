@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-
-
+import Compact from '@uiw/react-color-compact';
+import '../styles/main.scss';
 
 const ColorPicker: React.FC = ( ) => {
   const [selectedColor, setSelectedColor] = useState<string>('#ffffff');
@@ -11,13 +11,19 @@ const ColorPicker: React.FC = ( ) => {
     window.electronapi.sendColorToMain(color);
   };
 
-  return (
-    <input
-      type="color"
-      value={selectedColor}
-      onChange={handleColorChange}
-    />
-  );
+
+    return (
+      <Compact
+        color={selectedColor}
+
+        className='color-picker'
+        onChange={(color) => {
+          setSelectedColor(color.hex);
+          window.electronapi.sendColorToMain(color.hex);
+        }}
+      />
+    );
+
 };
 
 export default ColorPicker;
