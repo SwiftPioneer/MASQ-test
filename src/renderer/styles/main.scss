@@ -1,13 +1,15 @@
 @import 'components/_buttons';
-@import 'components/_colors';
-@import '../components/NavigationBar.scss';
+@import 'components/_variables';
 
 $bgcolor: #000e17;
 $textcolor: white;
 body {
   font-family: 'Arial, sans-serif';
-  background-color: $bgcolor;
   transition: background-color 2s ease-in-out;
+}
+
+body, p, div, nav, ul {
+  margin: 0;
 }
 
 h1 {
@@ -16,4 +18,30 @@ h1 {
 
 p {
   color: $secondary-text-color;
+}
+
+nav {
+  padding-top: 2em;
+
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-size: $base-font-size;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+ 
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 50px) ; /* Optional: Set the height of the container */
 }
