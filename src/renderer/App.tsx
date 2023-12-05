@@ -2,6 +2,8 @@ import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import icon from '../../assets/icon.svg';
 import './App.css';
 import './style.scss';
+import WeatherComponent from './components/WeatherComponent';
+import NavigationBar from './components/NavigationBar';
 
 function Hello() {
   return (
@@ -43,8 +45,10 @@ function Hello() {
 export default function App() {
   return (
     <Router>
+      <NavigationBar />
       <Routes>
         <Route path="/" element={<Hello />} />
+        <Route path="/weather" element={<WeatherComponent />} />
       </Routes>
     </Router>
   );
