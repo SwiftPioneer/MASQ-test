@@ -1,0 +1,16 @@
+$bgcolor: lightblue;
+$textcolor: darkblue;
+$fontsize: 18px;
+
+/* Use the variables */
+body {
+    position: relative;
+    color: white;
+    height: 100vh;
+    background: $bgcolor;
+    font-family: sans-serif;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
