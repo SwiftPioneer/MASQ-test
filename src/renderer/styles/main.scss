@@ -1,0 +1,19 @@
+@import 'components/_buttons';
+@import 'components/_colors';
+@import '../components/NavigationBar.scss';
+
+$bgcolor: #000e17;
+$textcolor: white;
+body {
+  font-family: 'Arial, sans-serif';
+  background-color: $bgcolor;
+  transition: background-color 2s ease-in-out;
+}
+
+h1 {
+  color: $primary-text-color;
+}
+
+p {
+  color: $secondary-text-color;
+}

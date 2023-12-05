@@ -3,8 +3,11 @@ import ColorPicker from './ColorPicker';
 
 const Home: React.FC = () => {
   return (
-  <ColorPicker />
-  )
+    <>
+      <h1>Welcome to Electron!</h1>
+      <ColorPicker />
+    </>
+  );
 };
 
 export default Home;
