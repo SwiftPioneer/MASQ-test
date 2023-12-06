@@ -27,11 +27,11 @@ function WeatherComponent() {
   };
 
   return (
-    <div>
+    <div className="center-container">
       <h2>Weather App</h2>
       <div>
-        <label htmlFor="cityInput">Enter City: </label>
         <input
+          placeholder='Enter City'
           type="text"
           id="cityInput"
           value={city}
